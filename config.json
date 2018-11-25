@@ -1,0 +1,13 @@
+{
+  "bucket": "psl-images2",
+  "backup": {
+      "prefix": "original-",
+      "keepExtension": true
+  },
+  "reduce": {
+      "quality": 80,
+      "keepExtension": true,
+      "acl": "public-read",
+      "cacheControl": "public, max-age=31536000"
+  }
+}
