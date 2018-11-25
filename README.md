@@ -18,7 +18,7 @@ put on AWS S3 bucket, this package will resize/reduce it and put to S3.
 Clone this repository and install dependencies:
 
 ```bash
-git clone git@github.com:ysugimoto/aws-lambda-image.git
+git clone git@github.com:kjenney/aws-lambda-image.git
 cd aws-lambda-image
 npm install .
 ```
@@ -165,11 +165,6 @@ roles and policies.
 npm run deploy
 ```
 
-*Notice*: Because there are some limitations in `Claudia.js` support for
-policies, which could lead to issues with `Access Denied` when processing
-images from one bucket and saving them to another, we have decided to introduce
-support for custom policies.
-
 #### Custom policies
 
 Policies which should be installed together with our Lambda function are stored
@@ -274,6 +269,7 @@ processor.run(config)
 - [jpegoptim](https://github.com/tjko/jpegoptim)
 - [pngquant](https://pngquant.org/)
 - [gifsicle](https://github.com/kohler/gifsicle)
+
 
 ## License
 
